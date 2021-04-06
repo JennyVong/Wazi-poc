@@ -1,8 +1,19 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">wazi-app</h1>
+  <div id="home" class="container">
+    <header>
+      <!-- <h1>Nav Bar</h1> -->
+      <!-- Nav Bar -->
+    </header>
+    <main>
+      <div class="section">
+        <Carousel :cards="cards" />
+      </div>
+    </main>
+
+    <!-- <Logo /> -->
+
+    <!-- <Indicators /> -->
+    <!-- <h1 class="title">wazi-app</h1>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -19,14 +30,39 @@
           class="button--grey"
         >
           GitHub
-        </a>
-      </div>
-    </div>
+        </a> -->
+    <!-- </div> -->
   </div>
 </template>
 
 <script>
-export default {}
+import Carousel from '../components/Carousel'
+export default {
+  name: 'Home',
+  components: { Carousel },
+  data() {
+    return {
+      cards: [
+        {
+          imgName: 'dummyImg2.jpg',
+          btnAction: 'Book a session',
+        },
+        {
+          imgName: 'dummyImg3.jpg',
+          btnAction: 'View all sessions',
+        },
+        {
+          imgName: 'dummyImg4.jpg',
+          btnAction: 'Take an assessment',
+        },
+        {
+          imgName: 'dummyImg5.jpg',
+          btnAction: 'View assessments',
+        },
+      ],
+    }
+  },
+}
 </script>
 
 <style>
