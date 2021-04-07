@@ -65,6 +65,7 @@ export default {
 </script>
 
 <style scoped>
+/* Transitions dont work! */
 .slide-leave-active,
 .slide-enter-active {
   opacity: 0;

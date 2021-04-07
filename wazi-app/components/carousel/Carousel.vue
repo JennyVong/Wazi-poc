@@ -10,11 +10,6 @@
         :showPrevElement="this.showPrevElement"
       />
     </div>
-    <!-- <Indicators
-      :elements="this.cards"
-      :currentElementIndex="this.currentElementIndex"
-      :showElement="this.showElement"
-    /> -->
 
     <!-- Indicators -->
     <div>
