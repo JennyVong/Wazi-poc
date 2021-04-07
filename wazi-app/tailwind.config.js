@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       colors: {
         teal: '#00AACE',
+        articlespace: '#EFEFEF',
       },
     },
   },
