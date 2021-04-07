@@ -7,7 +7,7 @@
     <div
       class="container bg-articlespace rounded-2xl w-72 h-80 mx-auto my-8"
     ></div>
-    <button class="border-2 border-teal rounded px-6 py-2 text-teal">
+    <button class="border-2 border-teal rounded-xl px-6 py-2 text-teal">
       View all Articles
     </button>
   </div>
