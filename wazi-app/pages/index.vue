@@ -1,6 +1,9 @@
 <template>
   <div id="home" class="container">
     <header>
+      <div>
+        <Navbar />
+      </div>
       <!-- <h1>Nav Bar</h1> -->
       <!-- Nav Bar -->
     </header>
@@ -8,6 +11,9 @@
       <div class="homepage">
         <div>
           <Carousel :cards="cards" />
+        </div>
+        <div>
+          <Upcoming-sessions />
         </div>
         <div>
           <Articles />
