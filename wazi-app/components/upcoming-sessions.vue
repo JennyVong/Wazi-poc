@@ -1,6 +1,6 @@
 <template>
   <div class="text-center">
-    <h1 class="font-bold">Upcoming Sessions</h1>
+    <h1 class="font-bold pt-7">Upcoming Sessions</h1>
     <!-- No sessions -->
     <div class="container bg-articlespace rounded-2xl w-72 h-28 mx-auto my-8">
       <div class="text-center text-black p-6">

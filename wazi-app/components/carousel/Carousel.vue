@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center">
+  <div class="text-center pt-7">
     <div class="inline-block">
       <Card
         class="current-element"
