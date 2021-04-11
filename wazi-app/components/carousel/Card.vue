@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex justify-center items-center mx-12 md:max-w-2xl text-gray-900"
-  >
+  <div class="justify-center items-center mx-12 md:max-w-2xl text-teal">
     <!-- Image -->
     <div class="relative">
       <transition class="slide">
@@ -15,7 +13,7 @@
       <!-- Arrows -->
       <div class="absolute inset-y-0 left-0">
         <button
-          class="mt-48 h-16 cursor-pointer duration-300 opacity-50 hover:opacity-10"
+          class="h-full cursor-pointer duration-300 opacity-50 hover:opacity-10"
           @click="showPrevElement()"
         >
           <img
@@ -27,7 +25,7 @@
       </div>
       <div class="absolute inset-y-0 right-0">
         <button
-          class="mt-48 h-16 cursor-pointer duration-300 opacity-50 hover:opacity-10"
+          class="h-full cursor-pointer duration-300 opacity-50 hover:opacity-10"
           @click="showNextElement()"
         >
           <img
@@ -42,7 +40,7 @@
       <div class="absolute inset-x-0 bottom-0 m-4">
         <a href="">
           <button
-            class="text-lg p-2.5 font-medium rounded-xl duration-300 shadow bg-gray-300 bg-opacity-80 hover:bg-white"
+            class="text-lg p-2.5 border-2 border-teal font-medium rounded-xl duration-300 bg-gray-200 bg-opacity-80 hover:bg-white"
           >
             {{ btnAction }}
           </button>
