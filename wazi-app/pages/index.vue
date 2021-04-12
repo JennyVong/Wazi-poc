@@ -4,7 +4,6 @@
       <div>
         <Navbar />
       </div>
-      <!-- <h1>Nav Bar</h1> -->
       <!-- Nav Bar -->
       <!-- <navbar /> -->
     </header>
@@ -14,7 +13,7 @@
           <Carousel :cards="cards" />
         </div>
         <div>
-          <Upcoming-sessions />
+          <UpcomingSessions :totalSessions="totalSessions" :session="session" />
         </div>
         <div class="mt-10">
           <Articles />
@@ -28,9 +27,11 @@
 
 <script>
 import Carousel from '../components/carousel/Carousel'
+import UpcomingSessions from '../components/UpcomingSessions'
+
 export default {
   name: 'Home',
-  components: { Carousel },
+  components: { Carousel, UpcomingSessions },
   data() {
     return {
       cards: [
@@ -51,6 +52,14 @@ export default {
           btnAction: 'View assessments',
         },
       ],
+      totalSessions: 1,
+      session: {
+        therapist: 'Therapist',
+        sessionType: 'Type',
+        date: 'Date',
+        time: 'Time',
+        timezone: 'Timezone',
+      },
     }
   },
 }

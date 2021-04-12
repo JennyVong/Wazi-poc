@@ -69,21 +69,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.dot-selected {
-  opacity: 0.7;
-  cursor: default;
-}
-
-.slide-leave-active,
-.slide-enter-active {
-  transition: 3s;
-}
-.slide-enter {
-  transform: translate(100%, 0);
-}
-.slide-leave-to {
-  transform: translate(-100%, 0);
-}
-</style>
