@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center">
+  <div class="text-center pt-7">
     <div class="inline-block">
       <Card
         class="current-element"
@@ -69,21 +69,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-.dot-selected {
-  opacity: 0.7;
-  cursor: default;
-}
-
-.slide-leave-active,
-.slide-enter-active {
-  transition: 3s;
-}
-.slide-enter {
-  transform: translate(100%, 0);
-}
-.slide-leave-to {
-  transform: translate(-100%, 0);
-}
-</style>

@@ -1,7 +1,9 @@
 <template>
   <div id="home" class="container">
     <header>
-      <!-- <h1>Nav Bar</h1> -->
+      <div>
+        <Navbar />
+      </div>
       <!-- Nav Bar -->
       <navbar />
     </header>
@@ -10,7 +12,9 @@
         <div>
           <Carousel :cards="cards" />
         </div>
-
+        <div>
+          <UpcomingSessions :totalSessions="totalSessions" :session="session" />
+        </div>
         <div class="mt-10">
           <Articles />
         </div>
@@ -23,9 +27,11 @@
 
 <script>
 import Carousel from '../components/carousel/Carousel'
+import UpcomingSessions from '../components/UpcomingSessions'
+
 export default {
   name: 'Home',
-  components: { Carousel },
+  components: { Carousel, UpcomingSessions },
   data() {
     return {
       cards: [
@@ -46,6 +52,14 @@ export default {
           btnAction: 'View assessments',
         },
       ],
+      totalSessions: 1,
+      session: {
+        therapist: 'Therapist',
+        sessionType: 'Type',
+        date: 'Date',
+        time: 'Time',
+        timezone: 'Timezone',
+      },
     }
   },
 }
