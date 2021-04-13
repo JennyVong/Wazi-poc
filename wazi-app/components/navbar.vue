@@ -1,11 +1,12 @@
 <template>
   <!-- This example requires Tailwind CSS v2.0+ -->
-  <nav class="bg-blue-800 w-full h-16">
-    <div class="max-w-auto mx-auto px-2 sm:px-6 lg:px-8">
+  <nav class="bg-white w-full h-16">
+    <div class="mx-auto px-2 sm:px-6 lg:px-8">
       <div class="relative flex items-center justify-between h-16">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
           <button
+            @click="clickMenu"
             type="button"
             class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
             aria-controls="mobile-menu"
@@ -74,23 +75,23 @@
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <a
                 href="#"
-                class="hover:bg-blue-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                class="text-black hover:underline hover:text-black px-3 py-2 rounded-md text-sm font-medium"
                 aria-current="page"
                 >Home</a
               >
               <a
                 href="#"
-                class="text-white hover:bg-blue-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                class="text-black hover:underline hover:text-black px-3 py-2 rounded-md text-sm font-medium"
                 >Book a Session</a
               >
               <a
                 href="#"
-                class="text-white hover:bg-blue-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                class="text-black hover:underline hover:text-black px-3 py-2 rounded-md text-sm font-medium"
                 >Assessments</a
               >
               <a
                 href="#"
-                class="text-white hover:bg-blue-900 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                class="text-black hover:underline hover:text-black px-3 py-2 rounded-md text-sm font-medium"
                 >Articles</a
               >
             </div>
@@ -100,7 +101,7 @@
           class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
         >
           <button
-            class="text-white hover:text-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+            class="text-black hover:text-teal rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-300 focus:ring-white"
           >
             <span class="sr-only">View notifications</span>
             <!-- Heroicon name: outline/bell -->
@@ -152,6 +153,7 @@
               role="menu"
               aria-orientation="vertical"
               aria-labelledby="user-menu"
+              hidden
             >
               <a
                 href="#"

@@ -3,13 +3,15 @@
     <header>
       <!-- <h1>Nav Bar</h1> -->
       <!-- Nav Bar -->
+      <navbar />
     </header>
     <main>
       <div class="homepage">
         <div>
           <Carousel :cards="cards" />
         </div>
-        <div>
+
+        <div class="mt-10">
           <Articles />
         </div>
       </div>
