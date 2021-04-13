@@ -13,7 +13,7 @@
       <!-- Arrows -->
       <div class="absolute inset-y-0 left-0">
         <button
-          class="h-full cursor-pointer duration-300 opacity-50 hover:opacity-10"
+          class="h-full cursor-pointer duration-300 opacity-50 hover:opacity-10 focus:outline-none"
           @click="showPrevElement()"
         >
           <img
@@ -25,7 +25,7 @@
       </div>
       <div class="absolute inset-y-0 right-0">
         <button
-          class="h-full cursor-pointer duration-300 opacity-50 hover:opacity-10"
+          class="h-full cursor-pointer duration-300 opacity-50 hover:opacity-10 focus:outline-none"
           @click="showNextElement()"
         >
           <img
@@ -38,7 +38,7 @@
 
       <!-- Button -->
       <div class="absolute inset-x-0 bottom-0 m-4">
-        <a href="">
+        <a href="#">
           <button
             class="text-lg p-2.5 border-2 border-teal font-medium rounded-xl duration-300 bg-gray-200 bg-opacity-80 hover:bg-white"
           >

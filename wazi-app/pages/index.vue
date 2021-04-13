@@ -1,5 +1,5 @@
 <template>
-  <div id="home" class="container">
+  <div id="home">
     <header>
       <div>
         <Navbar />
@@ -15,7 +15,7 @@
         <div>
           <UpcomingSessions :totalSessions="totalSessions" :session="session" />
         </div>
-        <div class="mt-10">
+        <div>
           <Articles />
         </div>
       </div>
@@ -55,10 +55,14 @@ export default {
       totalSessions: 1,
       session: {
         therapist: 'Therapist',
-        sessionType: 'Type',
-        date: 'Date',
-        time: 'Time',
-        timezone: 'Timezone',
+        sessionType: 'Zoom',
+        date: {
+          month: 'Mar',
+          day: '18',
+          year: '2021',
+        },
+        time: '12:00 PM',
+        timezone: 'EST',
       },
     }
   },
