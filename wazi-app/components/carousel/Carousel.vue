@@ -69,3 +69,10 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.dot-selected {
+  opacity: 0.7;
+  cursor: default;
+}
+</style>

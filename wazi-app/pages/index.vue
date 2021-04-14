@@ -1,26 +1,27 @@
 <template>
-  <div id="home" class="container">
+  <div id="home">
     <header>
       <div>
         <Navbar />
       </div>
       <!-- Nav Bar -->
-      <navbar />
     </header>
     <main>
       <div class="homepage">
-        <div>
+        <div class="py-5">
           <Carousel :cards="cards" />
         </div>
-        <div>
+        <div class="py-5">
           <UpcomingSessions :totalSessions="totalSessions" :session="session" />
         </div>
-        <div class="mt-10">
+        <div class="py-5">
           <Articles />
         </div>
       </div>
     </main>
-
+    <footer>
+      <Footer />
+    </footer>
     <!-- <Logo /> -->
   </div>
 </template>
@@ -55,10 +56,14 @@ export default {
       totalSessions: 1,
       session: {
         therapist: 'Therapist',
-        sessionType: 'Type',
-        date: 'Date',
-        time: 'Time',
-        timezone: 'Timezone',
+        sessionType: 'Zoom',
+        date: {
+          month: 'Mar',
+          day: '18',
+          year: '2021',
+        },
+        time: '12:00 PM',
+        timezone: 'EST',
       },
     }
   },
